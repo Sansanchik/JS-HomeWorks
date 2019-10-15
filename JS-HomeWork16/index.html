@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		Body {width: 70%;
+			margin: 0 auto;
+			text-align: center;}
+	</style>
+
+	<h3>Технические требования:</h3>
+
+<p id="p">Считать с помощью модального окна браузера число, которое введет пользователь.
+С помощью функции посчитать факториал числа, которое ввел пользователь, и вывести его на экран.
+Использовать синтаксис ES6 для работы с перемеными и функциями.</p>
+	<script>
+		
+		let n = prompt ("Введите число для вычисления факториала");
+		let parsedNumber = parseInt(n);
+		
+		while(isNaN(parsedNumber)){
+    console.log(n);
+        n = prompt("Число не верное!");
+    parsedNumber = parseInt(n) ;
+}
+		function factorial(n){
+			return (n !=1) ? n* factorial(n-1):1;
+		};
+	 p.insertAdjacentHTML('afterend', '<h4>Факториал вашего числа ' + n + ' равен:</h4>');
+		document.write(factorial(n));
+
+	</script>
+</body>
+</html>
