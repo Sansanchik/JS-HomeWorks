@@ -1,0 +1,28 @@
+body{
+    font-family: Verdana, sans-serif;
+    background-color: #cccccc;
+}
+h1{
+    margin-top: 50px;
+    text-align: center;
+    color: #525151;
+}
+h2{
+    color: #222f3a;
+}
+h4{
+    color: #3a4965;
+}
+p{
+    color: #434343;
+    text-align: justify;
+}
+strong{
+    color: #1082af;
+}
+.container{
+    width: 80%;
+    padding: 10px 30px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
