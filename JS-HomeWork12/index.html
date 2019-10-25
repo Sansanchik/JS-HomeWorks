@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Banners</title>
+    <style>
+        .container {
+          width:60%;
+          margin: 0 auto;
+          }
+        .slides {
+            position: relative;
+            height: 300px;
+            width: auto;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        .slide {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 1;
+
+            -webkit-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            -o-transition: opacity 1s;
+            transition: opacity 1s;
+        }
+
+        .slide__img {
+            width: 800px;
+            height: 400px;
+        }
+
+        .showing {
+            opacity: 1;
+            z-index: 2;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            width: 500px;
+            margin: 110px auto 0 auto;
+        }
+        .stop {
+            background-color: red;
+            width: 150px;
+            height: 50px;
+            display: block;
+        }
+
+        .play {
+            background-color: green;
+            width: 150px;
+            height: 50px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <ul class="slides" id="slides">
+            <li class="slide showing">
+                <img src="img/banners_img_1.jpg" class="slide__img" alt="old games one">
+            </li>
+            <li class="slide">
+                <img src="img/banners_img_2.jpg" class="slide__img" alt="old games too">
+            </li>
+            <li class="slide">
+                <img src="img/banners_img_3.jpg" class="slide__img"
+                    alt="old games three">
+            </li>
+            <li class="slide">
+                <img src="img/banners_img_4.jpg" class="slide__img" alt="old games four">
+            </li>
+        </ul>
+   
+    <div class="buttons">
+    <button id="stop" class="stop">Stop</button>
+    <button id="play" class="play">Play</button>
+</div>
+ </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
