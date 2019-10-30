@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+
+/*-- main --*/
+main {
+    font-family: 'Arimo', sans-serif;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    height: 49px;
+    text-transform: uppercase;
+    width: 192px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/*-- price table --*/
+.main-table {
+    text-transform: uppercase;
+    table-layout: fixed;
+    width: 1192px;
+    margin: 20px auto;
+}
+
+.dark {
+   border: 22px solid #000; 
+}
+.light {
+  border: 22px solid #fff; 
+}
+
+.line-2 {
+    background-color: #e3e3e3;
+}
+
+.line-1 {
+    background-color: #f2f2f2;
+}
+
+.main-table td {
+    text-align: center;
+    height: 70px;
+    vertical-align: middle;
+    color: #484848;
+    box-shadow: 6px 0px 8px -3px rgba(0, 0, 0, 0.09);
+}
+
+.main-table th {
+    vertical-align: middle;
+    padding: 27px 0 25px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    box-shadow: 6px 0px 8px -3px rgba(0, 0, 0, 0.09);
+}
+
+.main-table tr:first-child th:first-child {
+    color: #484848;
+    font-size: 18px;
+}
+
+.main-table tr:first-child th:first-child .main-table {
+    font-size: 30px;
+}
+
+.standart { background-color: #89c331;}
+.ultimate { background-color: #f04a56;}
+.premium { background-color: #20807c;}
+
+.main-table tr:nth-child(2) th {
+    color: #484848;
+}
+
+.price-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.price-flex ul {
+    list-style: none;
+    text-align: left;
+    position: relative;
+    top: 4px;
+    margin-left: 4px;
+}
+
+.dollars {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.cent {
+    font-size: 24px;
+}
+
+.period {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 7px 0 0 3px;
+}
+
+.price-table i {
+    font-size: 22px;
+    margin-right: 12px;
+    color: #848484;
+}
+
+.btn-contact-us {background: #484848;}
+.btn-contact-us:hover {background: #2f2f2f;}
+
+.standard-color {background: #89c331;}
+.standard-color:hover {background: #76a52f;}
+
+.ultimate-color {background: #f04a56;}
+.ultimate-color:hover {background: #a23038;}
+
+.premium-color {background: #20807c;}
+.premium-color:hover {background: #165452;}
+
+.change-theme {
+    display: block;
+    background-color: orange;
+    margin: 0 auto;
+}
